@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Autour+One&display=swap");
 
 :root {
     --nav-color: #ffffff;
@@ -20,6 +21,10 @@ html {
 
 /* */
 nav {
+    display: flex;
+}
+
+nav ul {
     color: var(--nav-text);
     background-color: var(--nav-color);;
     width: 100%;
@@ -28,13 +33,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin: auto;
-    border: 1px solid var(--primary-color);
-    border-radius: 0 0 10px 10px;
     font-family: "Merriweather Sans", sans-serif;
-}
-
-nav ul {
-    display: flex;
 }
 
 nav ul li {
@@ -46,10 +45,21 @@ nav ul li {
 nav a {
     color: var(--nav-text);
     font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
 }
   
-nav a:hover {
+nav ul li a:hover {
     color: var(--secondary-color);
+}
+
+.brand_name {
+    align-content: center;
+    padding: 17px;
+    font-family: "Autour One", system-ui;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Jumbotron */
